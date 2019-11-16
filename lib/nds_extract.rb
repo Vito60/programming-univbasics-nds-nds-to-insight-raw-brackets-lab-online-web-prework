@@ -4,14 +4,14 @@ require 'directors_database'
     director_index = 0 
     totals = {}
   while director_index < nds.length do
-    director_name = nds[director_index][:name]
+    director_name = nds[director_index][:name].sum
     totals[director_name] = 0
     movie_index = 0
 
 
     while movie_index < nds[director_index][:movies].length do    
     director_index += 1
-    totals[director_name] += totals
+    totals[director_name] += here is where you add the individual movie totals 
   end
 
   totals
