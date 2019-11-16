@@ -8,10 +8,10 @@ require 'directors_database'
     totals[director_name] = 0
     movie_index = 0
 
-
-    while movie_index < nds[director_index][:movies].length do    
+    movies = nds[director_index][:movies]
+    while movie_index < movies.length do    
     director_index += 1
-    totals[director_name] += [] 
+    totals[director_name] += movies[movie_index][:worldwide_gross]
   end
 
   totals
